@@ -1,6 +1,7 @@
 /**
  * Problem statement:
- * Write a program that solves the following equation and displays the value x and y:
+ * Write a program that solves the following equation 
+ * and displays the value of x and y:
  * 1) 3.4x+50.2y=44.5 
  * 2) 2.1x+.55y=5.9 
  * Assume Cramer’s rule to solve equation
