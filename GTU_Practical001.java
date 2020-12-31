@@ -1,8 +1,10 @@
 /** 
  * Problem statement:
- * Write a Program that displays Welcome to Java, Learning Java Programming is fun.
+ * Write a Program that displays 
+ * Hello World 
+ * Welcome to Java, 
+ * Learning Java Programming is fun.
  * 
- *
  */
 
 public class GTU_Practical001 
