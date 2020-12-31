@@ -17,14 +17,16 @@ public class GTU_Practical004 {
 		double weight,height,bmi;
 		Scanner input = new Scanner(System.in);
 		
-		System.out.print("Enter weight in pound: ");
+		System.out.print("Enter your weight in pound: ");
 		weight= input.nextDouble()*0.45359273; // convert pound to kg
 		
-		System.out.print("Enter height in inches");
+		System.out.print("Enter your height in inches: ");
 		height = input.nextDouble()*0.0254;
 		
 		bmi=weight/(height*height);
-		System.out.print("BMI : "+bmi);
+		System.out.print("Your BMI is : "+bmi);
+
+		input.close();
 	}
 
 }
