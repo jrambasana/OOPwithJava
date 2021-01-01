@@ -1,7 +1,7 @@
 /**
  * Problem Statement: 
  * Write a program that reads a number in meters, 
- * converts it to feet, and displays the result.
+ * converts it to feets, and display the result.
  * (Hint: 1 metre = 3.28084 feet)
  */
 
