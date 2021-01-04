@@ -13,7 +13,6 @@ import java.util.Scanner;
 public class GTU_Practical004 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		double weight,height,bmi;
 		Scanner input = new Scanner(System.in);
 		
@@ -21,9 +20,9 @@ public class GTU_Practical004 {
 		weight= input.nextDouble()*0.45359273; // convert pound to kg
 		
 		System.out.print("Enter your height in inches: ");
-		height = input.nextDouble()*0.0254;
+		height = input.nextDouble()*0.0254; // convert inches to meters
 		
-		bmi=weight/(height*height);
+		bmi = weight / (height*height);
 		System.out.print("Your BMI is : "+bmi);
 
 		input.close();

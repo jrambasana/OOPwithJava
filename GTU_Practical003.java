@@ -13,7 +13,7 @@ public class GTU_Practical003 {
 		Scanner sc = new Scanner(System.in);
 		double num = sc.nextDouble();
 		double feet=num*3.28084;
-		System.out.println("The corresponsing value in Feets: " +feet);
+		System.out.println(num + " Meters =" + feet + " Feets");
 	}
 
 }
