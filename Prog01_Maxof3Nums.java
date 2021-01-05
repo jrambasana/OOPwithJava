@@ -6,7 +6,8 @@ import java.util.Scanner;
 
 public class Prog01_Maxof3Nums
 {
-    public static void main(String[] args) {	
+    public static void main(String[] args)
+    {	
 		Scanner input = new Scanner(System.in);
         System.out.print("Enter number 1: ");
         int num1 = input.nextInt();
