@@ -6,7 +6,10 @@
  *
  */
 
+package GTU_Practical_Programs;
+
 import java.util.Scanner;
+
 public class GTU_Practical005 {
 
 	public static void main(String[] args) {

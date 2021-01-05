@@ -7,6 +7,8 @@
  * 
  */
 
+package GTU_Practical_Programs;
+
 public class GTU_Practical001 
 {
     public static void main(String[] args) 

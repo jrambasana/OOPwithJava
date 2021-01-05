@@ -3,7 +3,11 @@
  * Write a program that prompts the user to enter 
  * a letter and check whether a letter is a vowel or constant.
  */
+
+package GTU_Practical_Programs;
+
 import java.util.Scanner;
+
 public class GTU_Practical006 {
 
 	public static void main(String[] args) {

@@ -10,7 +10,9 @@
  *  x=ed-bf/ad-bc
  *  y=af-ec/ad-bc
  */
- 
+
+package GTU_Practical_Programs;
+
 public class GTU_Practical002 
 {
 public static void main(String[] args) {

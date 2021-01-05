@@ -5,6 +5,8 @@
  * (Hint: 1 metre = 3.28084 feet)
  */
 
+package GTU_Practical_Programs;
+
 import java.util.Scanner;
 
 public class GTU_Practical003 {

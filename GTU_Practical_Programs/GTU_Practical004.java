@@ -8,6 +8,9 @@
  * (Note:- 1 pound=.45359237 Kg and 1 inch=.0254 meters.)
  *
  */	
+
+package GTU_Practical_Programs;
+
 import java.util.Scanner;
 
 public class GTU_Practical004 {
