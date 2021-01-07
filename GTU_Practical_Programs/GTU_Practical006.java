@@ -1,7 +1,7 @@
 /**
  * Problem Statement:
  * Write a program that prompts the user to enter 
- * a letter and check whether a letter is a vowel or constant.
+ * a letter and check whether a letter is a vowel or consonant.
  */
 
 package GTU_Practical_Programs;
@@ -27,10 +27,10 @@ public class GTU_Practical006 {
 			case 'I':
 			case 'O':
 			case 'U':
-				System.out.println("It is Vowel.");
+				System.out.println(ch + " is a Vowel.");
 				break;
 			default:
-				System.out.println("It is Constant.");
+				System.out.println("It is Consonant.");
 		}
 		
 		
