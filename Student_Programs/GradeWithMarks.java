@@ -1,3 +1,5 @@
+package Student_Programs;
+
 import java.util.Scanner;
 class GradeWithMarks{
 	public static void main(String[] args){
