@@ -1,3 +1,10 @@
+/**
+ * Problem Statement:
+ * Write a program that prompts the user to enter a number 
+ * and prints the Multiplication table upto number n.
+ * Also read the value of n from user.
+ * @author Raj Kumar
+ */
 import java.util.Scanner;
 public class Multiplication {
     public static void main(String [ ] args)
