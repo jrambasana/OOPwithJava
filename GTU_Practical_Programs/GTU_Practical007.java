@@ -7,6 +7,7 @@
 package GTU_Practical_Programs;
 
  public class GTU_Practical007 {
+	 
     public static void main(String[] args) {
 		
 		String numberPlate = ""+(char)(Math.random()*26+65);

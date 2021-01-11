@@ -13,7 +13,7 @@ public class GTU_Practical006 {
 	public static void main(String[] args) {
 		
 		Scanner input = new Scanner(System.in);
-		System.out.print("Please enter a character to check:");
+		System.out.print("Please enter a character:");
 		char ch = input.next().charAt(0);
 		
 		switch(ch) {
@@ -27,10 +27,10 @@ public class GTU_Practical006 {
 			case 'I':
 			case 'O':
 			case 'U':
-				System.out.println(ch + " is a Vowel.");
+				System.out.println(ch + " - It is a Vowel.");
 				break;
 			default:
-				System.out.println("It is Consonant.");
+				System.out.println(ch + " - It is Consonant.");
 		}
 		
 		
