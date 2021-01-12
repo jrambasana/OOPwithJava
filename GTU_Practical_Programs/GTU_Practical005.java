@@ -16,6 +16,8 @@ public class GTU_Practical005
 		System.out.println("Enter the three numbers:");
 		for(i=0;i<3;i++)
 			arr[i]=input.nextInt();
+
+		input.close();
 			
 		for(i=0;i<3-1;i++)
 			for(j=0;j<3-i-1;j++)
@@ -30,6 +32,5 @@ public class GTU_Practical005
 		for(i=0;i<3;i++)
 			System.out.println(arr[i]);	
 		        
-		input.close();
 	}
 }

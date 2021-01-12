@@ -28,7 +28,5 @@ public class SwitchCaseExample03 {
                     break;
             }
         }
-                
-        input.close();
     }
 }
