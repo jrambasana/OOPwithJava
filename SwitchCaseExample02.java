@@ -22,5 +22,7 @@ public class SwitchCaseExample02 {
             default:
                 System.out.println("You don't belong here!!!");
         }
+                
+        input.close();
     }
 }

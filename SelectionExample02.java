@@ -34,5 +34,7 @@ public class SelectionExample02 {
         }
 
         System.out.println("The number of days : " + days);
+                
+        input.close();
     }
 }

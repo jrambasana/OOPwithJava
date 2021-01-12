@@ -28,4 +28,5 @@ package GTU_Practical_Programs;
 		String digits = (""+ Math.random()).substring(3, 7);
 		
 		System.out.println(numberPlate+digits);		
-	}}
+	}
+}

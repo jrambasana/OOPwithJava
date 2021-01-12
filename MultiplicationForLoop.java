@@ -10,5 +10,7 @@ public class MultiplicationForLoop {
         {
             System.out.println(n + " X " + i + "  =  " + (n*i));
         }
+                
+        input.close();
     }
 }

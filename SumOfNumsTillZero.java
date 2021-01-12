@@ -11,6 +11,8 @@ public class SumOfNumsTillZero {
             sum = sum + n;
         } while (n != 0);
 
-        System.out.println("\n Sum of numbers entered: " + sum);        
+        System.out.println("\n Sum of numbers entered: " + sum); 
+                
+        input.close();      
     }
 }

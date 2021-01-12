@@ -27,5 +27,7 @@ public class Prog01_Maxof3Nums
                 {
                     System.out.print("Number 3 : " + num3 + " is the Greatest number.");
                 }                
+                
+        input.close();
     }
 } 

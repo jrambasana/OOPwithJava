@@ -18,5 +18,7 @@ class BMI{
         	System.out.println("Your are Overweight");
         }else 
             System.out.println("Your are Obese");
+        
+        input.close();
     }
 }

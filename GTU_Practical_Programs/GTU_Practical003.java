@@ -16,6 +16,8 @@ public class GTU_Practical003 {
 		double num = sc.nextDouble();
 		double feet=num*3.28084;
 		System.out.println(num + " Meters =" + feet + " Feets");
+		        
+        sc.close();
 	}
 
 }

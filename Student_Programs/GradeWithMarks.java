@@ -16,6 +16,8 @@ class GradeWithMarks{
 			System.out.println("Grade obtained: D");
 		}else 
 		System.out.println("Grade obtained: E");
+        
+        sc.close();	
 	}
 	
 }

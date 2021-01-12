@@ -12,5 +12,7 @@ public class StringMethods {
         System.out.println("To upper case: " + str.toUpperCase());
         System.out.println("To lower case: " + str.toLowerCase()); 
         System.out.println("Trimmed string: " + str.trim());
+                
+        in.close();
     }
 }

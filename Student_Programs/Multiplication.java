@@ -18,5 +18,7 @@ public class Multiplication {
         {
           System.out.println( num + " X " + i+ " = " +(num*i));
         }
+                
+        input.close();
     }
 }

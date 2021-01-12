@@ -33,7 +33,7 @@ public class GTU_Practical006 {
 				System.out.println(ch + " - It is Consonant.");
 		}
 		
-		
+		        
+        input.close();
 	}
-
 }

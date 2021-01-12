@@ -7,6 +7,5 @@ public class StringMethods3 {
         System.out.println("Welcome to Java to learn it".indexOf('o', 6));
         System.out.println("Welcome to Java to learn it".lastIndexOf('o'));
         System.out.println("Welcome to Java to learn it".lastIndexOf('o',6));
-            
     }    
 }

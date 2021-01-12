@@ -15,5 +15,7 @@ public class SelectionExample01 {
             System.out.println("The number is Even");
         else
             System.out.println("The number is Odd");
+                
+        input.close();
     }
 }

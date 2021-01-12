@@ -56,6 +56,7 @@ public class SwitchCaseExample01 {
             System.out.println("Month is " + monthName);
         else
             System.out.println("Please enter proper month number.");
-
+        
+        input.close();
     } 
 }

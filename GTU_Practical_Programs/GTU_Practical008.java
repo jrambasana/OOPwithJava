@@ -33,7 +33,8 @@ public class GTU_Practical008 {
 				i++;
 			}
 		}
-		
+		        
+        input.close();
 	}
 
 }

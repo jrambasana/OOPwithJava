@@ -24,6 +24,5 @@ public class StringMethods2 {
         String s2 = "java" + msg.substring(3);
         System.out.println(s1);
         System.out.println(s2);
-
     }
 }

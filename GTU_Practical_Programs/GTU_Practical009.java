@@ -20,6 +20,8 @@ public class GTU_Practical009 {
 		int result = gcd(num1,num2);
 		
 		System.out.print("GCD is : " + result);
+		        
+        input.close();
 	}
 
 	public static int gcd(int num1, int num2) {
