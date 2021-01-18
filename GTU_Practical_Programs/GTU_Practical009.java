@@ -12,14 +12,14 @@ public class GTU_Practical009 {
 	public static void main(String[] args) {
 		
 		Scanner input = new Scanner(System.in);
-		System.out.println("\nEnter the number 1 :");
+		System.out.print("\n Enter the number 1 : ");
 		int num1 = input.nextInt();
-		System.out.println("\nEnter the number 2 :");
+		System.out.print("\n Enter the number 2 : ");
 		int num2 = input.nextInt();
 		
 		int result = gcd(num1,num2);
 		
-		System.out.print("GCD is : " + result);
+		System.out.print("GCD of " + num1 + " and " + num2 + " is : " + result);
 		        
         input.close();
 	}
