@@ -7,7 +7,6 @@
 package GTU_Practical_Programs;
 
  public class GTU_Practical007 {
-	 
     public static void main(String[] args) {
 		
 		String numberPlate = ""+(char)(Math.random()*26+65);
@@ -15,7 +14,6 @@ package GTU_Practical_Programs;
 		numberPlate += (char)(Math.random()*26+65);
 		
 		String digits = (""+ Math.random()).substring(3, 7);
-		
 		System.out.println("Generated number plate value is: " 
 							+ numberPlate + " " +digits);		
 
