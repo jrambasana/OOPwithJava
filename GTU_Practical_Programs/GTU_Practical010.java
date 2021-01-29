@@ -24,11 +24,11 @@ public class GTU_Practical010 {
 		for (int i = 0; i < list.length; i++)
 			System.out.print(list[i] + " ");
 	}
-	public static void reverse(int[] list) {
-		for (int i = 0; i < list.length/2; i++){
-			int temp = list[i];
-			list[i] = list[list.length-1-i];
-			list[list.length-1-i] = temp;
+	public static void reverse(int[] arr) {
+		for (int i = 0; i < arr.length/2; i++){
+			int temp = arr[i];
+			arr[i] = arr[arr.length-1-i];
+			arr[arr.length-1-i] = temp;
 			// list[i]=list[i]+list[list.length-1-i];
 			// list[list.length-1-i]=list[i]-list[list.length-1-i];
 			// list[i]=list[i]-list[list.length-1-i];

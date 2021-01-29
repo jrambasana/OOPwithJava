@@ -1,25 +1,31 @@
 package Unit4;
 
 class Circle {
-    double radius = 1; /** The radius of this circle */
-    double getArea(){ /** Return the area of this circle */
-        return Math.PI * radius * radius;
+    double radius;
+    Circle ()
+    {
     }
-    double getPerimeter(){ /** Return the perimeter */
-        return 2 * Math.PI * radius;
+    Circle (double d)
+    {
+        radius = d;
     }
-    void setRadius(double newRadius){ /** Set new radius */
+    double getArea(){ 
+        return (Math.PI * radius * radius);
+    }
+    double getPerimeter(){ 
+        return (2 * Math.PI * radius);
+    }
+    void setRadius(double newRadius){ 
         radius = newRadius;
     }
 }
-
 public class TestCircle {
     public static void main(String[] args) {
         Circle c1 = new Circle();
-
-        c1.setRadius(10);
-
-        System.out.println("Circle area is: " + c1.getArea());
-        System.out.println("Circle perimeter is: " + c1.getPerimeter());
+        Circle c2 = new Circle(10.5);
+        System.out.println("Circle 1 area is: " + c1.getArea());
+        c1.setRadius(5);
+        System.out.println("Circle 1 area is: " + c1.getArea());
+        System.out.println("Circle 2 area is: " + c2.getArea());
     }
 }

@@ -10,7 +10,9 @@ public class GTU_Practical011 {
     public static void main(String[] args) {
 
 		int[][] arr = new int[6][6];
-		
+		System.out.println("New matrix:");
+		printArray(arr);
+
 		for(int i=0;i<arr.length-1;i++) 
 		{
 			int cnt=0;
@@ -32,7 +34,7 @@ public class GTU_Practical011 {
 				arr[arr.length-1][j]=1;
 			}
 		}
-		
+		System.out.println("Matrix with odd no of 1's in row n column:");
 		printArray(arr);
 	}
 	public static void printArray(int[][] arr) {
