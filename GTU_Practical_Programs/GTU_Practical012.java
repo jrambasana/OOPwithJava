@@ -13,15 +13,12 @@ public class GTU_Practical012 {
 	public static void main(String[] args) {
 		
 		Random random = new Random(1000);
-		
-		for(int i=1;i<=100;i++) {
-			System.out.printf("%3d",random.nextInt(98)+1);
+		for( int i = 1 ; i <= 100 ; i++ ) {
+			System.out.printf("%4d",random.nextInt(49)+1);
 			if(i%10==0)
 				System.out.println();
 		}
-		
 		// System.out.println(Arrays.toString((random.ints(100,1,49).toArray())));
-		
 	}
 
 }
