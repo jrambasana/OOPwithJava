@@ -1,12 +1,12 @@
 package Unit4;
 
 class MyCount{
-    int count=0;
+    int id=0;
     MyCount()
-    {   count++;       }
+    {   id++;       }
     public String toString()
     {
-        return "Count is: "+count;
+        return "Id of this object is: "+id;
     }
 }
 public class ToStringExample {
@@ -14,7 +14,10 @@ public class ToStringExample {
         MyCount c1 = new MyCount();
         System.out.println(c1);
 
-        c1.count = 10;
-        System.out.println("New output: " + c1.toString());
+        c1.id = 10;
+        System.out.println(c1);
+
+        String str1 = c1 + "";
+        System.out.println(str1);
     }
 }

@@ -7,7 +7,6 @@ public class GTU_Practical014 {
     public static void main(String[] args) {
 
 		ArrayList<Object> list = new ArrayList<>();
-		
 		Loan loanAcc = new Loan(1, "Amit", 36, 8.6f, 100000);
 		list.add(loanAcc);
 		Date currDate = new Date();
@@ -70,11 +69,11 @@ class Loan {
 		this.intRate = intRate;
 	}
 	public String toString() {
-        String str = "Loan Account Details: AccountNo: "+getAccNumber()
-                +", Account Holder Name: " + getAccHolderName()
-                +", Amount: " + getAmount()
-                +", Tenure: " + getTenure()
-                +", Interest Rate: " + getIntRate();
+        String str = "Loan object details: \n AccountNo: "+getAccNumber()
+                +",\n Account Holder Name: " + getAccHolderName()
+                +",\n Amount: " + getAmount()
+                +",\n Tenure: " + getTenure()
+                +",\n Interest Rate: " + getIntRate();
 		return str;
 	}
 }
@@ -95,7 +94,8 @@ class MyCircleClass{
 		return Math.PI * radius * radius;
 	}
 	public String toString() {
-		String str="Circle Details: Radius: " + getRadius() + ", Area: " + getArea();
+		String str = "Circle object details:\n Radius: " + getRadius() 
+									+ ",\n Area: " + getArea();
 		return str;
 	}
 }
