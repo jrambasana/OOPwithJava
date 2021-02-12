@@ -69,11 +69,11 @@ class Loan {
 		this.intRate = intRate;
 	}
 	public String toString() {
-        String str = "Loan object details: \n AccountNo: "+getAccNumber()
-                +",\n Account Holder Name: " + getAccHolderName()
-                +",\n Amount: " + getAmount()
-                +",\n Tenure: " + getTenure()
-                +",\n Interest Rate: " + getIntRate();
+        String str = "Loan object details: \n   AccountNo: "+getAccNumber()
+                +",\n   Account Holder Name: " + getAccHolderName()
+                +",\n   Amount: " + getAmount()
+                +",\n   Tenure: " + getTenure()
+                +",\n   Interest Rate: " + getIntRate();
 		return str;
 	}
 }
@@ -94,8 +94,8 @@ class MyCircleClass{
 		return Math.PI * radius * radius;
 	}
 	public String toString() {
-		String str = "Circle object details:\n Radius: " + getRadius() 
-									+ ",\n Area: " + getArea();
+		String str = "Circle object details:\n    Radius: " 
+						+ getRadius() + ",\n    Area: " + getArea();
 		return str;
 	}
 }
