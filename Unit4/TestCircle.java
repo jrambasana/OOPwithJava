@@ -2,14 +2,14 @@ package Unit4;
 
 import java.util.Scanner;
 
-class Circle {
+class Circle2 {
     double radius;
-    Circle ()
+    Circle2 ()
     {
         int radius=10;
         System.out.println(radius);
     }
-    Circle (double d)
+    Circle2 (double d)
     {
         radius = d;
     }
@@ -23,21 +23,21 @@ class Circle {
         radius = newRadius;
     }
 }
-public class TestCircle {
+public class TestCircle2 {
     public static void main(String[] args) {
-        Circle c1 = new Circle();
-        Circle c2 = new Circle(10.5);
-        Circle c3;
-        System.out.println("Circle 1 area is: " + c1.getArea());
+        Circle2 c1 = new Circle2();
+        Circle2 c2 = new Circle2(10.5);
+        Circle2 c3;
+        System.out.println("Circle2 1 area is: " + c1.getArea());
         c1.setRadius(5);
-        System.out.println("Circle 1 area is: " + c1.getArea());
-        System.out.println("Circle 2 area is: " + c2.getArea());
+        System.out.println("Circle2 1 area is: " + c1.getArea());
+        System.out.println("Circle2 2 area is: " + c2.getArea());
 
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter a radius for Circle 3: ");
+        System.out.print("Enter a radius for Circle2 3: ");
         int r = input.nextInt();
-        c3 = new Circle(r);
-        System.out.println("Circle 3 area is: " + c3.getArea());
+        c3 = new Circle2(r);
+        System.out.println("Circle2 3 area is: " + c3.getArea());
 
         input.close();
     }
