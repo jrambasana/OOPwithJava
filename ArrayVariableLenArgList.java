@@ -14,9 +14,9 @@ public class ArrayVariableLenArgList {
         }
 
         System.out.println("The maximum  number is: "+ max(arr));
-        
         System.out.println("The maximum  number is: "+ max(44, 55, 66));
         
+        input.close();        
     }
 
     public static int max(int... arr)

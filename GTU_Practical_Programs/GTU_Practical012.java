@@ -6,7 +6,7 @@
  */
 package GTU_Practical_Programs;
 
-import java.util.Arrays;
+// import java.util.Arrays;
 import java.util.Random;
 
 public class GTU_Practical012 {

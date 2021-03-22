@@ -38,5 +38,7 @@ public class TestCircle {
         int r = input.nextInt();
         c3 = new Circle(r);
         System.out.println("Circle 3 area is: " + c3.getArea());
+
+        input.close();
     }
 }

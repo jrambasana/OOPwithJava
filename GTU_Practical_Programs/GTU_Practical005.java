@@ -31,6 +31,7 @@ public class GTU_Practical005
 		System.out.println("Numbers in the Decreasing order: ");
 		for(i=0;i<3;i++)
 			System.out.println(arr[i]);	
-		        
+		
+		input.close();        
 	}
 }

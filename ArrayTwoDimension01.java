@@ -23,5 +23,6 @@ public class ArrayTwoDimension01 {
             }
             System.out.println("");
         }
+        input.close();
     }
 }
