@@ -12,18 +12,17 @@ public class GTU_Practical016
 {
     public static void main(String[] args) 
     {
-		
 		Scanner input = new Scanner(System.in);
 		System.out.print("Please enter a decimal number: ");
 		String number = input.next();
-		input.close();
 		
 		if(number.split("\\.").length!=2) {
 			System.out.println("Given number is not a valid decimal number.");
 			System.exit(0);
 		}
 		Rational rNum = new Rational(number);
-		System.out.println("Number in a fraction: "+rNum.getNumarator()+"/"+rNum.getDenominator());
+		System.out.println("Number in a fraction: "
+		+ rNum.getnumerator() + " / " + rNum.getDenominator());
         input.close();
     }
 
@@ -31,25 +30,25 @@ public class GTU_Practical016
 
 class Rational 
 {
-	private int numarator;
+	private int numerator;
 	private int denominator;
 	
 	Rational(String number){
 		int decPos = number.indexOf('.');
 		this.denominator = (int) Math.pow(10, number.length()-decPos-1);
-		this.numarator=((int)(Double.parseDouble(number)*denominator));
+		this.numerator=((int)(Double.parseDouble(number)*denominator));
 		normalize();
 	}
-	Rational(int numarator, int denominator){
-		this.setNumarator(numarator);
+	Rational(int numerator, int denominator){
+		this.setnumerator(numerator);
 		this.setDenominator(denominator);
 		normalize();
 	}
-	public int getNumarator() {
-		return numarator;
+	public int getnumerator() {
+		return numerator;
 	}
-	public void setNumarator(int numarator) {
-		this.numarator = numarator;
+	public void setnumerator(int numerator) {
+		this.numerator = numerator;
 	}
 	public int getDenominator() {
 		return denominator;
@@ -67,8 +66,8 @@ class Rational
 		return gcd;
 	}
 	public void normalize() {
-		int gcd = gcd(numarator,denominator);
-		this.numarator = this.numarator/gcd;
+		int gcd = gcd(numerator,denominator);
+		this.numerator = this.numerator/gcd;
 		this.denominator = this.denominator/gcd;
 	}
 	

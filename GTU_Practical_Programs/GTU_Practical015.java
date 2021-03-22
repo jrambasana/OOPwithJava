@@ -16,7 +16,7 @@ public class GTU_Practical015 {
 			int decNumber = bin2Dec(binaryNumber);
 			System.out.print("Decimal number: "+decNumber);
 		} catch(NumberFormatException ex) {
-			System.out.println("Exception: "+ex.getMessage());
+			System.out.println("Exception occured: "+ex.getMessage());
 		}
 		input.close();
 	}
@@ -27,7 +27,8 @@ public class GTU_Practical015 {
 		{
 			char currBinVal = binaryNumber.charAt(binaryNumber.length()-i-1);
 			if(currBinVal != '0' && currBinVal != '1')
-				throw new NumberFormatException("Given number is not a binary number: " + binaryNumber);
+				throw new NumberFormatException("Given number is not a binary number: " 
+												+ binaryNumber);
 			else if(currBinVal == '1')
 				result = result + (int)Math.pow(2, i);
 		}
