@@ -1,7 +1,7 @@
 package GTU_Practical_Programs;
 
 /**
- * Write the bin2Dec (string binary String) method to convert a binary string 
+ * Write the bin2Dec (String binaryString) method to convert a binary string 
  * into a decimal number. Implement the bin2Dec method to 
  * throw a NumberFormatException if the string is not a binary string.
  */
@@ -16,7 +16,7 @@ public class GTU_Practical015 {
 			int decNumber = bin2Dec(binaryNumber);
 			System.out.print("Decimal number: "+decNumber);
 		} catch(NumberFormatException ex) {
-			System.out.println("Exception occured: "+ex.getMessage());
+			System.out.println("Error occured: "+ex.getMessage());
 		}
 		input.close();
 	}
