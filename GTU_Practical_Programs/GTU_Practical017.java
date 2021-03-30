@@ -2,7 +2,6 @@ package GTU_Practical_Programs;
 /**
  * Write a program that displays a tic-tac-toe board. A cell may be X, O, or empty. 
  * What to display at each cell is randomly decided. 
- * The X and O are images in the files X.gif and O.gif.
  */
 import java.util.Scanner;
 
@@ -20,11 +19,11 @@ public class GTU_Practical017 {
 		System.out.println("=============================");
 		System.out.print("Please enter Player 1 name: ");
 		playerName[0] = input.next();
-		System.out.println("Hi, "+playerName[0]+". Your sign is: X.");
+		System.out.println("Hi, "+playerName[0]+". Your sign is: O.");
 		System.out.println("-----------------------------");
 		System.out.print("Please enter Player 2 name: ");
 		playerName[1] = input.next();
-		System.out.println("Hi, "+playerName[1]+". Your sign is: O.");
+		System.out.println("Hi, "+playerName[1]+". Your sign is: X.");
 		System.out.println("=============================");
 		
 		System.out.println("Current canvas of game is empty.");
@@ -32,7 +31,8 @@ public class GTU_Practical017 {
 		System.out.println();
 		System.out.println("-----------------------------");
 		
-		while(true){
+		while(true)
+		{
 			if(currPlayer==1) sign='x'; else sign='o';
 			System.out.println(playerName[currPlayer]+" ("+sign+") to enter position:");
 			System.out.print("Row: ");
@@ -40,7 +40,7 @@ public class GTU_Practical017 {
 			System.out.print("Col: ");
 			col = input.nextInt()-1;
 			if(row>=3 || row<0 || col>=3 || col<0 || game[row][col]!='\0'){
-				System.out.println("Please enter valid position. (3x3) empty cell.");
+				System.out.println("Please enter any valid position from (3x3) empty cells.");
 				continue;
 			}
 			times++;
