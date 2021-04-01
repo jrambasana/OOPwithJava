@@ -1,4 +1,4 @@
-package GTU_Practical_Programs;
+package javafxapplication01;
 
 /*
 * Program - 17
@@ -29,9 +29,9 @@ public class GTU_Practical017 extends Application
    {
     int n = (int)(Math.random() * 3);
     if (n == 0)
-     pane.add(new ImageView(new Image("image/x.gif")), j, i);
+     pane.add(new ImageView(new Image("images/x.gif")), j, i);
     else if (n == 1)
-     pane.add(new ImageView(new Image("image/o.gif")), j, i);
+     pane.add(new ImageView(new Image("images/o.gif")), j, i);
     else
      continue;
    }
@@ -42,4 +42,7 @@ public class GTU_Practical017 extends Application
   primaryStage.setScene(scene); 
   primaryStage.show(); 
  }
+public static void main(String[] args) {
+    launch(args);
+}
 }
