@@ -1,3 +1,5 @@
+package javafxlab;
+
 /*
 * Program - 18
 * Write a program that moves a circle 
@@ -17,7 +19,7 @@ public class Pract18 extends Application
  public void start(Stage primaryStage) {
   Pane pane = new Pane();
   pane.setPadding(new Insets(30, 30, 30, 30));
-  Circle circle = new Circle(30, 30, 30);
+  Circle circle = new Circle(50, 50, 30);
   
   pane.getChildren().add(circle);
 

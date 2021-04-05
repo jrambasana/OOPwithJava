@@ -1,4 +1,4 @@
-package javafxlabprograms;
+package javafxlab;
 
 /*
 * Program - 20
