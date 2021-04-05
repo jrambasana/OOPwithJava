@@ -25,13 +25,15 @@ public class Pract20 extends Application
  protected Text text = new Text(50, 50, "MEFGI - Sem 6 EC1 Class");
 
  @Override 
- public void start(Stage primaryStage) {
+ public void start(Stage primaryStage) 
+ {
+  BorderPane pane = new BorderPane();
+
   HBox paneForButtons = new HBox(20);
-  Button btLeft = new Button("<=");
-  Button btRight = new Button("=>");
+  Button btLeft = new Button("<= Move Left");
+  Button btRight = new Button("=> Move Right");
   paneForButtons.getChildren().addAll(btLeft, btRight);
   paneForButtons.setAlignment(Pos.CENTER);
-  BorderPane pane = new BorderPane();
   pane.setBottom(paneForButtons);
 
   HBox paneForRadioButtons = new HBox(20);
@@ -49,12 +51,12 @@ public class Pract20 extends Application
   rbBlack.setToggleGroup(group);
   rbOrange.setToggleGroup(group);
   rbGreen.setToggleGroup(group);
+  pane.setTop(paneForRadioButtons);
 
   Pane paneForText = new Pane();
   paneForText.setStyle("-fx-border-color: black");
   paneForText.getChildren().add(text);
   pane.setCenter(paneForText);
-  pane.setTop(paneForRadioButtons);
 
   btLeft.setOnAction(e -> text.setX(text.getX() - 10));
   btRight.setOnAction(e -> text.setX(text.getX() + 10));
