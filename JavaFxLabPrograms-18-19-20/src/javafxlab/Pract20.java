@@ -22,7 +22,7 @@ import javafx.scene.paint.Color;
 
 public class Pract20 extends Application 
 {
- protected Text text = new Text(50, 50, "Tarannum Bloch @ MEFGI");
+ protected Text text = new Text(50, 50, "MEFGI - Sem 6 EC1 Class");
 
  @Override 
  public void start(Stage primaryStage) {
