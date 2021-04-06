@@ -27,14 +27,13 @@ public class Pract20 extends Application
  @Override 
  public void start(Stage primaryStage) 
  {
-  BorderPane pane = new BorderPane();
+  BorderPane mainPane = new BorderPane();
 
   HBox paneForButtons = new HBox(20);
   Button btLeft = new Button("<= Move Left");
   Button btRight = new Button("=> Move Right");
   paneForButtons.getChildren().addAll(btLeft, btRight);
   paneForButtons.setAlignment(Pos.CENTER);
-  pane.setBottom(paneForButtons);
 
   HBox paneForRadioButtons = new HBox(20);
   RadioButton rbRed = new RadioButton("Red");
@@ -51,12 +50,14 @@ public class Pract20 extends Application
   rbBlack.setToggleGroup(group);
   rbOrange.setToggleGroup(group);
   rbGreen.setToggleGroup(group);
-  pane.setTop(paneForRadioButtons);
 
   Pane paneForText = new Pane();
   paneForText.setStyle("-fx-border-color: black");
   paneForText.getChildren().add(text);
-  pane.setCenter(paneForText);
+
+  mainPane.setTop(paneForRadioButtons);
+  mainPane.setCenter(paneForText);
+  mainPane.setBottom(paneForButtons);
 
   btLeft.setOnAction(e -> text.setX(text.getX() - 10));
   btRight.setOnAction(e -> text.setX(text.getX() + 10));
@@ -90,8 +91,8 @@ public class Pract20 extends Application
     text.setFill(Color.GREEN);
    }
   });
-
-  Scene scene = new Scene(pane, 450, 150);
+  
+  Scene scene = new Scene(mainPane, 450, 150);
   primaryStage.setTitle("OOP-I Practical 20");
   primaryStage.setScene(scene);
   primaryStage.show();
