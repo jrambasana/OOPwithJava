@@ -36,9 +36,9 @@ public class GTU_Practical017_1 {
 		{
 			if(currPlayer==1) sign='x'; else sign='o';
 			System.out.println(playerName[currPlayer]+" ("+sign+") shall enter a position:");
-			System.out.print("Row: ");
+			System.out.print("Enter Row no: ");
 			row = input.nextInt()-1;
-			System.out.print("Col: ");
+			System.out.print("Enter Col no: ");
 			col = input.nextInt()-1;
 			if(row>=3 || row<0 || col>=3 || col<0 || game[row][col]!='\0'){
 				System.out.println("Please enter any valid position from (3x3) empty cells.");
