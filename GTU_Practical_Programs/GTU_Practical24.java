@@ -10,7 +10,7 @@ package GTU_Practical_Programs;
 
 import java.util.PriorityQueue;
 
-public class Pract24
+public class GTU_Practical24
 {
      public static void main(String[] args) 
  {
