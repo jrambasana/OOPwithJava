@@ -1,3 +1,5 @@
+package GTU_Practical_Programs;
+
 /*
 * Program - 23
 * Write a generic method that returns the minimum 
@@ -6,7 +8,7 @@
 
 import java.util.Scanner;
 
-public class Pract23
+public class GTU_Practical23
 {
  public static void main(String[] args) 
  {

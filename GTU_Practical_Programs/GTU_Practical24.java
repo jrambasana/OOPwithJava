@@ -1,3 +1,5 @@
+package GTU_Practical_Programs;
+
 /*
 * Program - 24
 * Define  MYPriorityQueue class that extends 
