@@ -21,7 +21,18 @@ public class GTU_Practical023
                 list[i][j] = ++value;
         }
     }
-    System.out.println("Min = " + min(list));
+    System.out.println("Min Integer = " + min(list));
+
+    double dvalue = 0.0;
+    Double[][] dlist = new Double[10][10];
+    for (int i = 0; i < dlist.length; i++) 
+    {
+        for (int j = 0; j < dlist[i].length; j++) 
+        {
+                dlist[i][j] = ++dvalue;
+        }
+    }
+    System.out.println("Min Double = " + min(dlist));
  }
 
  public static <E extends Comparable<E>> E min(E[][] list) 
@@ -31,7 +42,7 @@ public class GTU_Practical023
     {
         for (E element : elements) 
         {
-            if (element.compareTo(min) < 0) 
+            if (element.compareTo(min) < 0)
             {
                 min = element;
             }
