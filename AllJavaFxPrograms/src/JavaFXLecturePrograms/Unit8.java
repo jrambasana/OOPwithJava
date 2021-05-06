@@ -64,10 +64,10 @@ public void start(Stage primaryStage) {
     form.add(new Label("Symptoms:"), 0, 6);
 
     // Place add and cancel button
-    Button btnAdd = new Button("Add", new ImageView("file:testFolder/icon-add.png"));
+    Button btnAdd = new Button("Add");//, new ImageView("file:testFolder/icon-add.png"));
     btnAdd.setGraphicTextGap(10);
     //btnAdd.setContentDisplay(ContentDisplay.RIGHT);
-    Button btnCancel = new Button("Cancel", new ImageView("file:testFolder/icon-cancel.png"));
+    Button btnCancel = new Button("Cancel");//, new ImageView("file:testFolder/icon-cancel.png"));
     btnCancel.setGraphicTextGap(10);
     form.add(btnAdd,0,7);
     form.add(btnCancel,1,7);
