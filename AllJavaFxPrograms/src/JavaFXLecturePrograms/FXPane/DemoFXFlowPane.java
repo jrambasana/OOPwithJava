@@ -17,7 +17,7 @@ public void start(Stage primaryStage) {
     pane.setHgap(5);
     pane.setVgap(5);
     pane.setOrientation(Orientation.VERTICAL);
-    pane.setAlignment(Pos.TOP_RIGHT);
+    pane.setAlignment(Pos.CENTER);
 
     // Place nodes in the pane
     pane.getChildren().addAll(

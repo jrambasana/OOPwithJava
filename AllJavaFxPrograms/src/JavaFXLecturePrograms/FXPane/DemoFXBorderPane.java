@@ -41,7 +41,7 @@ public class DemoFXBorderPane extends Application {
 class CustomPane extends StackPane {
     public CustomPane(String title) {
             getChildren().add(new Label(title));
-            setStyle("-fx-border-color: red");
-            setPadding(new Insets(30,30,30,30));
+            setStyle("-fx-border-color: black");
+            setPadding(new Insets(50,50,50,50));
     }
 }

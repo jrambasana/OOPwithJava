@@ -26,9 +26,9 @@ public void start(Stage primaryStage) throws FileNotFoundException {
     imageView2.setFitWidth(100);
     pane.getChildren().add(imageView2);
 
-//    ImageView imageView3 = new ImageView(image);
-//    imageView3.setRotate(90);
-//    pane.getChildren().add(imageView3);
+    ImageView imageView3 = new ImageView(image);
+    imageView3.setRotate(90);
+    pane.getChildren().add(imageView3);
 
     // Create a scene and place it in the stage
     Scene scene = new Scene(pane);
