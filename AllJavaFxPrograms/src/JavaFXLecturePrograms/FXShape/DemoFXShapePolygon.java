@@ -14,29 +14,29 @@ public void start(Stage primaryStage) {
     Pane pane = new Pane();
 
     Polygon triangle = new Polygon(100,50,150,150,50,150);
-//    triangle.setFill(Color.WHITE);
-//    triangle.setStroke(Color.BLACK);
+    triangle.setFill(Color.WHITE);
+    triangle.setStroke(Color.BLACK);
     pane.getChildren().add(triangle);
 
     
 //    Polygon polygon = new Polygon();
-//    //Polyline polygon = new Polyline();
-//    polygon.setFill(Color.WHITE);
-//    polygon.setStroke(Color.BLACK);
-//    pane.getChildren().add(polygon);
-//
-//    ObservableList<Double> list = polygon.getPoints();
-//
-//    final double WIDTH = 200, HEIGHT = 200;
-//    double centerX = WIDTH / 2, centerY = HEIGHT / 2;
-//    double radius = Math.min(WIDTH, HEIGHT) * 0.4;
-//
-//    // Add points to the polygon list
-//    for (int i = 0; i < 6; i++) 
-//    {
-//    list.add(centerX + radius * Math.cos(2 * i * Math.PI / 6));
-//    list.add(centerY - radius * Math.sin(2 * i * Math.PI / 6));
-//    }
+    Polyline polygon = new Polyline();
+    polygon.setFill(Color.WHITE);
+    polygon.setStroke(Color.BLACK);
+    pane.getChildren().add(polygon);
+
+    ObservableList<Double> list = polygon.getPoints();
+
+    final double WIDTH = 200, HEIGHT = 200;
+    double centerX = WIDTH / 2, centerY = HEIGHT / 2;
+    double radius = Math.min(WIDTH, HEIGHT) * 0.4;
+
+    // Add points to the polygon list
+    for (int i = 0; i < 6; i++) 
+    {
+    list.add(centerX + radius * Math.cos(2 * i * Math.PI / 6));
+    list.add(centerY - radius * Math.sin(2 * i * Math.PI / 6));
+    }
 
     // Create a scene and place it in the stage
     Scene scene = new Scene(pane, 200, 200);

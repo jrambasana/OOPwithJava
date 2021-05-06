@@ -24,7 +24,10 @@ public void start(Stage primaryStage) {
     Circle circle = new Circle(125, 125, 50);
     circle.setFill(Color.WHITE);
     circle.setStroke(Color.BLACK);
-
+//    Rectangle circle = new Rectangle (50, 50, 100, 150);
+//    rectangle.setFill(Color.WHITE);
+//    rectangle.setStroke(Color.BLACK);
+    
     // Add circle and rectangle to the pane
     pane.getChildren().add(circle);
     pane.getChildren().add(rectangle);
@@ -35,21 +38,21 @@ public void start(Stage primaryStage) {
     pt.setPath(circle);
     pt.setNode(rectangle);
     pt.setOrientation(PathTransition.OrientationType.ORTHOGONAL_TO_TANGENT);
-    pt.setAutoReverse(true);
+    pt.setAutoReverse(false);
     pt.setCycleCount(Timeline.INDEFINITE);
-    pt.setRate(2);
+    pt.setRate(5);
     pt.play(); // Start animation
 
     circle.setOnMousePressed(e -> pt.pause());
     circle.setOnMouseReleased(e -> pt.play());
 
     // Apply a fade transition to rectangle
-    FadeTransition ft = new FadeTransition(Duration.millis(2000), rectangle);
-    ft.setFromValue(1.0);
-    ft.setToValue(0.1);
-    ft.setCycleCount(Timeline.INDEFINITE);
-    ft.setAutoReverse(true);
-    ft.play(); // Start animation
+//    FadeTransition ft = new FadeTransition(Duration.millis(2000), rectangle);
+//    ft.setFromValue(1.0);
+//    ft.setToValue(0.1);
+//    ft.setCycleCount(Timeline.INDEFINITE);
+//    ft.setAutoReverse(true);
+//    ft.play(); // Start animation
 
     // Create a scene and place it in the stage
     Scene scene = new Scene(pane, 250, 250);

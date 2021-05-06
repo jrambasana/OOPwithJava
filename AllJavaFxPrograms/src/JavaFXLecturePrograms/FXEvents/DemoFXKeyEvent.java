@@ -1,6 +1,9 @@
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontPosture;
+import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -9,7 +12,8 @@ public class DemoFXKeyEvent extends Application {
 public void start(Stage primaryStage) {
     // Create a pane and set its properties
     Pane pane = new Pane();
-    Text text = new Text(20, 20, "A");
+    Text text = new Text(50, 50, "A");
+    text.setFont(Font.font("Times New Roman", FontWeight.BOLD, FontPosture.ITALIC, 50));
     pane.getChildren().add(text);
 
     text.setOnKeyPressed(e -> {

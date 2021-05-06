@@ -13,18 +13,18 @@ public void start(Stage primaryStage) {
 
     // Create an ellipse and add it to pane
     Ellipse e = new Ellipse(150, 100, 100, 50);
-//		e.setStroke(Color.BLACK);
-//		e.setFill(Color.WHITE);
+    e.setStroke(Color.BLACK);
+    e.setFill(Color.WHITE);
     pane.getChildren().add(e);
 
-//		for (int i = 0; i < 16; i++) {
-//			// Create an ellipse and add it to pane
-//			Ellipse e1 = new Ellipse(150, 100, 100, 50);
-//			e1.setStroke(Color.color(Math.random(), Math.random(), Math.random()));
-//			e1.setFill(Color.WHITE);
-//			e1.setRotate(i * 180 / 16);
-//			pane.getChildren().add(e1);
-//		}
+    for (int i = 0; i < 16; i++) {
+            // Create an ellipse and add it to pane
+            Ellipse e1 = new Ellipse(150, 100, 100, 50);
+            e1.setStroke(Color.color(Math.random(), Math.random(), Math.random()));
+            e1.setFill(Color.WHITE);
+            e1.setRotate(i * 180 / 16);
+            pane.getChildren().add(e1);
+    }
 
     // Create a scene and place it in the stage
     Scene scene = new Scene(pane, 300, 200);
