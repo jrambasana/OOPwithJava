@@ -1,17 +1,20 @@
-package Sets;
-
 import java.util.*;  
 class Book {  
-int id;  
-String name,author,publisher;  
-int quantity;  
-public Book(int id, String name, String author, String publisher, int quantity) {  
-    this.id = id;  
-    this.name = name;  
-    this.author = author;  
-    this.publisher = publisher;  
-    this.quantity = quantity;  
-}  
+    int id;  
+    String name,author,publisher;  
+    int quantity;  
+    public Book(int id, String name, String author, String publisher, int quantity) {  
+        this.id = id;  
+        this.name = name;  
+        this.author = author;  
+        this.publisher = publisher;  
+        this.quantity = quantity;  
+    }  
+    public String toString()
+    {
+        return "\n Book Id: "+id+"\n Name: "+name+"\n Author: "+author
+                     +"\n Publisher: "+publisher+"\n Quantity: "+quantity;
+    }
 }  
 public class HashSetExample {  
 public static void main(String[] args) {  
@@ -24,9 +27,11 @@ public static void main(String[] args) {
     set.add(b1);  
     set.add(b2);  
     set.add(b3);  
+    set.add(b3);  
+
     //Traversing HashSet  
     for(Book b:set){  
-    System.out.println(b.id+" "+b.name+" "+b.author+" "+b.publisher+" "+b.quantity);  
+        System.out.println(b);  
     }  
 }  
 }  

@@ -1,5 +1,3 @@
-package Sets;
-
 import java.util.*;  
 class LinkedHashSet2{  
  public static void main(String args[]){  

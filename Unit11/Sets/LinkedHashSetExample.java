@@ -1,18 +1,21 @@
-package Sets;
-
 import java.util.*;  
 class Book2 {  
-int id;  
-String name,author,publisher;  
-int quantity;  
-public Book2(int id, String name, String author, String publisher, int quantity) {  
-    this.id = id;  
-    this.name = name;  
-    this.author = author;  
-    this.publisher = publisher;  
-    this.quantity = quantity;  
-}  
-}  
+    int id;  
+    String name,author,publisher;  
+    int quantity;  
+    public Book2(int id, String name, String author, String publisher, int quantity) {  
+        this.id = id;  
+        this.name = name;  
+        this.author = author;  
+        this.publisher = publisher;  
+        this.quantity = quantity;  
+    }  
+    public String toString()
+    {
+        return "\n Book Id: "+id+"\n Name: "+name+"\n Author: "+author
+                     +"\n Publisher: "+publisher+"\n Quantity: "+quantity;
+    }
+}   
 public class LinkedHashSetExample {  
 public static void main(String[] args) {  
     LinkedHashSet<Book2> hs=new LinkedHashSet<Book2>();  
@@ -26,7 +29,7 @@ public static void main(String[] args) {
     hs.add(b3);  
     //Traversing hash table  
     for(Book2 b:hs){  
-    System.out.println(b.id+" "+b.name+" "+b.author+" "+b.publisher+" "+b.quantity);  
+        System.out.println(b);  
     }  
 }  
 }  

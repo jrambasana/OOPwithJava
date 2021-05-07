@@ -1,5 +1,3 @@
-package Sets;
-
 import java.util.*;  
 class TreeSet1{  
  public static void main(String args[]){  

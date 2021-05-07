@@ -1,5 +1,3 @@
-package Sets;
-
 import java.util.*;  
 class HashSet3{  
  public static void main(String args[]){  

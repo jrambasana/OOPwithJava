@@ -11,8 +11,11 @@
         "e:\\01 J R A\\04 Even Sem 2019-20 Lockdown\\Sem 4 OOPI (Java)\\javafx-sdk-11.0.2\\lib\\javafx-swt.jar"
     ],
     "java.project.sourcePaths": [
+        "Unit7-8/FXShape",
         "Unit6",
+        "Unit11/Sets",
+        "Unit11/Maps",
         "Unit10",
-        "Unit7-8/FXShape"
+        "Unit11/Collections"
     ]
 }
